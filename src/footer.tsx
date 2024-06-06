@@ -1,0 +1,162 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
+import InstagramIcon from "./assets/socials/instagram.svg";
+import LinkedInIcon from "./assets/socials/linkedin.svg";
+import TwitterIcon from "./assets/socials/twitter.svg";
+import BeetleLogo from "./assets/beetle-logo-white.svg";
+
+const Footer = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  return (
+    <motion.footer
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: {
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+        hidden: {},
+      }}
+      className={
+        "bg-black backdrop-filter backdrop-blur-lg p-10 md:p-20 grid grid-cols-1 md:grid-cols-3 gap-10"
+      }
+    >
+      <motion.div
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: -50 },
+        }}
+        className={"flex flex-col space-y-10 justify-center"}
+      >
+        <img alt={"Beetle Logo"} src={BeetleLogo} width={180} height={50} />
+        <div className="flex space-x-2 items-center">
+          <a
+            href="https://www.aedin.com/company/beetle-ltd/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <img
+                alt={"LinkedIn Icon"}
+                src={LinkedInIcon}
+                width={25}
+                height={25}
+              />
+            </motion.div>
+          </a>
+          <a
+            href="https://x.com/Beetle_ltd?t=NwADVXDFdTWMXvyzWWrHZg&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <img alt={"twitter"} src={TwitterIcon} width={20} height={20} />
+            </motion.div>
+          </a>
+          <a
+            href="https://www.instagram.com/beetle.ltd?igsh=MXM2MTc2cGN3Mm85YQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <img
+                alt={"Instagram"}
+                src={InstagramIcon}
+                width={20}
+                height={20}
+              />
+            </motion.div>
+          </a>
+        </div>
+        <motion.p
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          className={"text-white text-sm"}
+        >
+          Copyright ©2024 Beetle Ltd.All rights reserved.
+        </motion.p>
+      </motion.div>
+      <motion.div
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <div className="flex flex-col space-y-4">
+          <h3 className="text-white text-lg">Products</h3>
+          <a
+            href="/products/bloom"
+            className="text-gray-400 text-sm hover:text-white transition-colors"
+          >
+            Bloom
+          </a>
+          <a
+            href="/products/spotlight"
+            className="text-gray-400 text-sm hover:text-white transition-colors"
+          >
+            Spotlight
+          </a>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <h3 className="text-white text-lg">Legal</h3>
+          <a
+            href="/terms"
+            className="text-gray-400 text-sm hover:text-white transition-colors"
+          >
+            Terms
+          </a>
+          <a
+            href="/privacy"
+            className="text-gray-400 text-sm hover:text-white transition-colors"
+          >
+            Privacy
+          </a>
+        </div>
+      </motion.div>
+      <motion.div
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 50 },
+        }}
+        className="flex flex-col space-y-4 text-white"
+      >
+        <p>
+          Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos,
+          Nigeria.
+        </p>
+        <div className={"flex flex-col space-y-1 justify-end"}>
+          <a
+            href="mailto:contact@beetle.com"
+            className="hover:text-gray-300 transition-colors"
+          >
+            contact@beetle.com
+          </a>
+          <a
+            href="tel:+2347009339339"
+            className="hover:text-gray-300 transition-colors"
+          >
+            +234 700 933 933 933
+          </a>
+        </div>
+      </motion.div>
+    </motion.footer>
+  );
+};
+
+export default Footer;
