@@ -38,7 +38,7 @@ const Products = () => {
       {products.map((product, index) => (
         <div key={product.id}>
           <div
-            className={`py-24 mx-auto w-full xl:max-w-[80%] flex flex-col items-center justify-between gap-y-10 ${
+            className={`pt-24 mx-auto w-full xl:max-w-[80%] flex flex-col items-center justify-between gap-y-10 ${
               index % 2 === 0 ? "xl:flex-row" : "xl:flex-row-reverse"
             }`}
           >
@@ -59,7 +59,7 @@ const Products = () => {
               <p className="text-lg xl:text-xl text-center xl:text-left mb-8">
                 {product.description}
               </p>
-              <a href={`/products/${product.id}`} className="mt-8">
+              <a href="#" className="mt-8">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

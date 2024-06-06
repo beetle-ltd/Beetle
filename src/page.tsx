@@ -43,7 +43,9 @@ export default function Home() {
             >
               <h2 className="text-xl sm:text-2xl md:text-4xl font-bold leading-relaxed xl:leading-[50px] pt-10">
                 We believe that people can change the world, with the right
-                tools and opportunities. that is why we exist. to create those
+                tools and opportunities. 
+                <br></br>
+                That is why we exist. To create those
                 opportunities that help you fulfill your dreams.
               </h2>
             </motion.div>

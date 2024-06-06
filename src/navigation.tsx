@@ -3,9 +3,9 @@ import { useState } from "react";
 import Logo from "./assets/beetle-logo.svg";
 
 const menuItems = [
-  { id: 1, title: "Bloom", href: "/bloom", isCenter: true },
-  { id: 2, title: "Spotlight", href: "/spotlight", isCenter: true },
-  { id: 3, title: "Blog", href: "/blog", isRight: true },
+  { id: 1, title: "Bloom", href: "#", isCenter: true },
+  { id: 2, title: "Spotlight", href: "#", isCenter: true },
+  { id: 3, title: "Blog", href: "#", isRight: true },
 ];
 
 const NavigationMenu = () => {

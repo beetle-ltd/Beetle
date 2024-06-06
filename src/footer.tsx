@@ -44,7 +44,7 @@ const Footer = () => {
         <img alt={"Beetle Logo"} src={BeetleLogo} width={180} height={50} />
         <div className="flex space-x-2 items-center">
           <a
-            href="https://www.aedin.com/company/beetle-ltd/"
+            href="https://www.linkedin.com/company/beetle-ltd/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,7 +58,7 @@ const Footer = () => {
             </motion.div>
           </a>
           <a
-            href="https://x.com/Beetle_ltd?t=NwADVXDFdTWMXvyzWWrHZg&s=09"
+            href="https://x.com/Beetle_ltd"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +67,7 @@ const Footer = () => {
             </motion.div>
           </a>
           <a
-            href="https://www.instagram.com/beetle.ltd?igsh=MXM2MTc2cGN3Mm85YQ=="
+            href="https://www.instagram.com/beetle.ltd"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +88,7 @@ const Footer = () => {
           }}
           className={"text-white text-sm"}
         >
-          Copyright ©2024 Beetle Ltd.All rights reserved.
+          Copyright © 2024 Beetle Ltd. All rights reserved.
         </motion.p>
       </motion.div>
       <motion.div
@@ -101,13 +101,13 @@ const Footer = () => {
         <div className="flex flex-col space-y-4">
           <h3 className="text-white text-lg">Products</h3>
           <a
-            href="/products/bloom"
+            href=""
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Bloom
           </a>
           <a
-            href="/products/spotlight"
+            href=""
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Spotlight
@@ -116,13 +116,13 @@ const Footer = () => {
         <div className="flex flex-col space-y-4">
           <h3 className="text-white text-lg">Legal</h3>
           <a
-            href="/terms"
+            href=""
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Terms
           </a>
           <a
-            href="/privacy"
+            href=""
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Privacy
@@ -137,21 +137,14 @@ const Footer = () => {
         className="flex flex-col space-y-4 text-white"
       >
         <p>
-          Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos,
-          Nigeria.
+          5B Salimonu Estate, New Bodija, Ibadan, Nigeria.
         </p>
         <div className={"flex flex-col space-y-1 justify-end"}>
           <a
             href="mailto:contact@beetle.com"
             className="hover:text-gray-300 transition-colors"
           >
-            contact@beetle.com
-          </a>
-          <a
-            href="tel:+2347009339339"
-            className="hover:text-gray-300 transition-colors"
-          >
-            +234 700 933 933 933
+            hello@beetleltd.org
           </a>
         </div>
       </motion.div>
