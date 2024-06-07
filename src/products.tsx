@@ -47,7 +47,7 @@ const Products = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.4 }}
-              className="flex-1 flex flex-col items-center xl:items-start"
+              className="flex-1 flex flex-col items-center xl:items-start pb-16 xl:pb-0"
             >
               <img
                 src={product.logo}
@@ -56,7 +56,7 @@ const Products = () => {
                 height={300}
                 className="mb-8"
               />
-              <p className="text-lg xl:text-xl text-center xl:text-left mb-8">
+              <p className="text-lg xl:text-xl text-center xl:text-left mb-8 max-w-[600px]">
                 {product.description}
               </p>
               <a href="#" className="mt-8">
@@ -78,17 +78,15 @@ const Products = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.4 + 0.2 }}
-              className={"flex justify-end flex-1 w-full h-full"}
+              className={"flex justify-center flex-1 aspect-auto"}
             >
-              <img
-                src={product.appImg}
-                alt="App Image"
-                width={800}
-                height={800}
-                className={
-                  "w-full h-full xl:w-[800px] xl:h-[800px] object-cover"
-                }
-              />
+              <div className="aspect-w-16 aspect-h-9 flex justify-center">
+                <img
+                  src={product.appImg}
+                  alt={`${product.title} App Image`}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </motion.div>
           </div>
           {index !== products.length - 1 && (

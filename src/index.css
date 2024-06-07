@@ -51,11 +51,13 @@ html {
 html {
   scroll-behavior: smooth;
 }
-body {
+body,
+#root {
   overflow-x: hidden !important;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  min-height: 1000lvh !important;
 }
 
 #navbar {

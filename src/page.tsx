@@ -34,7 +34,7 @@ export default function Home() {
       <Driven />
       <div>
         <ImageCard image={BallonImg}>
-          <div className="p-4 sm:p-8 md:p-12 lg:p-16 py-12 md:py-24 grid grid-cols-[70%,30%] gap-x-1 text-white relative">
+          <div className="p-4 sm:p-8 md:p-12 lg:p-16 py-12 md:py-24 block xl:grid grid-cols-[70%,30%] gap-x-1 text-white relative">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -43,10 +43,10 @@ export default function Home() {
             >
               <h2 className="text-xl sm:text-2xl md:text-4xl font-bold leading-relaxed xl:leading-[50px] pt-10">
                 We believe that people can change the world, with the right
-                tools and opportunities. 
+                tools and opportunities.
                 <br></br>
-                That is why we exist. To create those
-                opportunities that help you fulfill your dreams.
+                That is why we exist. To create those opportunities that help
+                you fulfill your dreams.
               </h2>
             </motion.div>
           </div>
