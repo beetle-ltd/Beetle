@@ -1,17 +1,14 @@
 import { motion } from "framer-motion";
-import ImageCard from "./components/image-card";
-import Driven from "./driven";
-import Footer from "./footer";
-import HeroSection from "./hero";
-import NavigationMenu from "./navigation";
-import Products from "./products";
-import GalaxyImg from "./assets/galaxy.png";
-import BallonImg from "./assets/ballon-bg.png";
+import ImageCard from "../components/image-card.tsx";
+import Driven from "../driven.tsx";
+import HeroSection from "../hero.tsx";
+import Products from "../products.tsx";
+import GalaxyImg from "../assets/galaxy.png";
+import BallonImg from "../assets/ballon-bg.png";
 
 export default function Home() {
   return (
     <>
-      <NavigationMenu />
       <HeroSection />
       <div>
         <ImageCard image={GalaxyImg}>
@@ -53,7 +50,6 @@ export default function Home() {
         </ImageCard>
       </div>
       <Products />
-      <Footer />
     </>
   );
 }
