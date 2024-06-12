@@ -74,7 +74,7 @@ const PrivacyPolicy = () => {
           <div className="flex flex-col space-y-5 pt-5">
             <span>
               If you have any questions or concerns about this Privacy Policy,
-              please contact us at privacy@bloomapp.com.
+              please contact us at hello@beetleltd.
             </span>
             <span>
               This Privacy Policy is effective as of 1st June 2024.

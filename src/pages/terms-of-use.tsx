@@ -94,7 +94,7 @@ const TermsOfUse = () => {
             </li>
             <li>
               Users can report any service issues by contacting us at
-              support@bloomapp.com at any time
+              hello@beetleltd.org at any time
             </li>
           </ul>
         </TextLayout>
