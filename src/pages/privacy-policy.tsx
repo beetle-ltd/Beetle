@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
               please contact us at privacy@bloomapp.com.
             </span>
             <span>
-              This Privacy Policy is effective as of [Effective Date].
+              This Privacy Policy is effective as of 1st June 2024.
             </span>
           </div>
         </TextLayout>
