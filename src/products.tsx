@@ -34,7 +34,7 @@ const Products = () => {
     },
   ];
   return (
-    <div className={"pt-10"}>
+    <div className={"pt-10 overflow-x-hidden w-full"}>
       {products.map((product, index) => (
         <div key={product.id}>
           <div
@@ -78,7 +78,9 @@ const Products = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.4 + 0.2 }}
-              className={"flex justify-center flex-1 aspect-auto"}
+              className={
+                "flex justify-center flex-1 aspect-auto overflow-x-hidden"
+              }
             >
               <div className="aspect-w-16 aspect-h-9 flex justify-center">
                 <img

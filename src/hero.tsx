@@ -3,7 +3,7 @@ import HeroImg from "./assets/hero-image.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center  h-[100lvh]">
+    <section className="w-full flex flex-col justify-center items-center min-h-[100dvh]">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
