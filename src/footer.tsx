@@ -6,6 +6,7 @@ import InstagramIcon from "./assets/socials/instagram.svg";
 import LinkedInIcon from "./assets/socials/linkedin.svg";
 import TwitterIcon from "./assets/socials/twitter.svg";
 import BeetleLogo from "./assets/beetle-logo-white.svg";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   const controls = useAnimation();
@@ -115,18 +116,18 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-4">
           <h3 className="text-white text-lg">Legal</h3>
-          <a
-            href=""
+          <Link
+           to="/terms-of-use"
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Terms
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/privacy-policy"
             className="text-gray-400 text-sm hover:text-white transition-colors"
           >
             Privacy
-          </a>
+          </Link>
         </div>
       </motion.div>
       <motion.div

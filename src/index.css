@@ -57,7 +57,7 @@ body,
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  min-height: 1000lvh !important;
+  min-height: 100lvh !important;
 }
 
 #navbar {
