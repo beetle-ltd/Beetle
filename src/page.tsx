@@ -25,7 +25,7 @@ export default function Home() {
             >
               <h2 className="text-xl sm:text-2xl md:text-4xl font-bold leading-relaxed xl:leading-[50px]">
                 &quot;We envision a future where commerce is seamless and easy,
-                powered by technology that works. our technology.&quot;
+                powered by technology that works. Our technology.&quot;
               </h2>
             </motion.div>
           </div>
