@@ -70,7 +70,7 @@ const NavigationMenu = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="hidden md:block"
         >
-          <a href="/blog">
+          <a href="#">
             <p className="text-sm  text-text mix-blend-difference hover:text-primary transition-colors duration-300 group relative">
               Blog
               <motion.span
