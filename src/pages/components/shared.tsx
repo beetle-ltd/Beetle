@@ -16,15 +16,15 @@ export function TextLayout({
   title?: string;
 }) {
   return (
-    <div className={"flex flex-col space-y-3 py-5"}>
-      <div className={"text-xl xl:text-3xl text-[#101010] font-bold"}>
+    <div className={"flex flex-col space-y-1 xl:space-y-2 py-3 xl:py-5"}>
+      <div className={"text-xl xl:text-2xl text-[#101010] font-bold"}>
         <span>
           {num}
           {num && "."}
         </span>
         &nbsp;<span>{title}</span>
       </div>
-      <div className={"text-[#505050] xl:text-lg"}>{children}</div>
+      <div className={"text-[#505050] text-sm xl:text-base"}>{children}</div>
     </div>
   );
 }

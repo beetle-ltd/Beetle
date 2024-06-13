@@ -4,7 +4,7 @@ const TermsOfUse = () => {
   return (
     <BodyLayout>
       <div className={"py-5"}>
-        <h1 className={"text-3xl xl:text-5xl text-[#101010] font-bold"}>
+        <h1 className={"text-3xl xl:text-4xl text-[#101010] font-bold"}>
           Terms of Use
         </h1>
         <Line />
@@ -40,7 +40,7 @@ const TermsOfUse = () => {
           </div>
         </TextLayout>
         <TextLayout num="3" title="User Prohibitions">
-          <h2 className="text-[#101010] text-lg xl:text-2xl pb-3 font-normal">
+          <h2 className="text-[#101010] text-base xl:text-xl pb-3 font-normal">
             Users are strictly prohibited from:
           </h2>
           <ul className="list-disc pl-5 space-y-2">

@@ -4,11 +4,11 @@ const PrivacyPolicy = () => {
   return (
     <BodyLayout>
       <div className={"py-5"}>
-        <h1 className={"text-3xl xl:text-5xl text-[#101010] font-bold"}>
+        <h1 className={"text-3xl xl:text-4xl text-[#101010] font-bold"}>
           Privacy Policy
         </h1>
         <Line />
-        <p className="max-w-[800px]">
+        <p className="max-w-[800px] text-sm xl:text-base">
           This Privacy Policy describes how Beetle Limited ("Bloom," "we," "us,"
           or "our") collects, uses, and shares your personal information when
           you use our mobile application ("App"). By using the App, you agree to
