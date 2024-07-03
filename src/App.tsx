@@ -4,6 +4,7 @@ import Home from "./pages/page.tsx";
 import PrivacyPolicy from "./pages/privacy-policy.tsx";
 import TermsOfUse from "./pages/terms-of-use.tsx";
 import CodeSos from "./pages/code-sos.tsx";
+import DeleteAll from "./pages/delete-all.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ function App() {
         { path: "/privacy-policy", element: <PrivacyPolicy /> },
         { path: "terms-of-use", element: <TermsOfUse /> },
         { path: "/delete-all", element: <CodeSos /> },
-        // Add routes for other pages
+        { path: "/account/delete", element: <DeleteAll /> },
       ],
     },
   ]);
