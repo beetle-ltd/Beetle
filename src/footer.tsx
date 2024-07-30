@@ -31,7 +31,9 @@ const Footer = () => {
         },
         hidden: {},
       }}
-      className={"bg-black backdrop-filter backdrop-blur-lg p-10 md:p-20"}
+      className={
+        "bg-black backdrop-filter backdrop-blur-lg p-10 md:p-20 flex items-center justify-center"
+      }
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 w-full h-full">
         <motion.div
@@ -86,7 +88,7 @@ const Footer = () => {
               visible: { opacity: 1 },
               hidden: { opacity: 0 },
             }}
-            className={"text-white text-sm"}
+            className={"text-white text-sm text-center"}
           >
             Copyright © 2024 Beetle Ltd. All rights reserved.
           </motion.p>

@@ -3,21 +3,26 @@ import BloomLogo from "./assets/bloom-logo.svg";
 import SpotlightLogo from "./assets/spotlight-logo.svg";
 import BloomAppImg from "./assets/bloom-app.png";
 import SpotlightAppImg from "./assets/spotlight-app.png";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
   type TProduct = {
     id: number;
     title: string;
     logo: string;
+    handleClick: () => void;
     description: string;
     appImg: string;
     buttonColor?: string;
   };
+  const navigate = useNavigate();
   const products: TProduct[] = [
     {
       id: 1,
       title: "Bloom",
       logo: BloomLogo,
+      handleClick: () =>
+        (window.location.href = "https://bloom.beetleltd.org/"),
       description:
         "Bloom helps you grow your business and simplifies its management. It is simple, easy to use and powerful.",
       appImg: BloomAppImg,
@@ -27,6 +32,7 @@ const Products = () => {
       id: 2,
       title: "Spotlight",
       logo: SpotlightLogo,
+      handleClick: () => (window.location.href = "https://myspotlight.me/"),
       description:
         "Spotlight radically improves your shopping experience. Find and acquire products you love from your favorite brands, easily.",
       appImg: SpotlightAppImg,
@@ -68,6 +74,7 @@ const Products = () => {
                       ? "bg-[#8c52ff] text-white"
                       : "bg-[#fefd00] text-[#000]"
                   } font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300`}
+                  onClick={product.handleClick}
                 >
                   Learn More
                 </motion.button>

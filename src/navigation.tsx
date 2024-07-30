@@ -3,8 +3,18 @@ import { useState } from "react";
 import Logo from "./assets/beetle-logo.svg";
 
 const menuItems = [
-  { id: 1, title: "Bloom", href: "#", isCenter: true },
-  { id: 2, title: "Spotlight", href: "#", isCenter: true },
+  {
+    id: 1,
+    title: "Bloom",
+    href: "https://bloom.beetleltd.org/",
+    isCenter: true,
+  },
+  {
+    id: 2,
+    title: "Spotlight",
+    href: "https://myspotlight.me/",
+    isCenter: true,
+  },
   { id: 3, title: "Blog", href: "#", isRight: true },
 ];
 
@@ -15,7 +25,7 @@ const NavigationMenu = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full z-50 p-4 md:p-6 backdrop-blur-lg"
+      className="fixed top-0 left-0 w-full p-4 md:p-6 backdrop-blur-lg"
       id={"navbar"}
     >
       <div className="container mx-auto flex items-center justify-between ">
