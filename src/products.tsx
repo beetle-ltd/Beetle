@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import BloomLogo from "./assets/bloom-logo.svg";
-import SpotlightLogo from "./assets/spotlight-logo.svg";
 import BloomAppImg from "./assets/bloom-app.png";
+import BloomLogo from "./assets/bloom-logo.svg";
 import SpotlightAppImg from "./assets/spotlight-app.png";
-import { useNavigate } from "react-router-dom";
+import SpotlightLogo from "./assets/spotlight-logo.svg";
 
 const Products = () => {
   type TProduct = {
@@ -15,7 +14,7 @@ const Products = () => {
     appImg: string;
     buttonColor?: string;
   };
-  const navigate = useNavigate();
+
   const products: TProduct[] = [
     {
       id: 1,
