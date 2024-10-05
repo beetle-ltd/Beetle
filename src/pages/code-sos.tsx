@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../api-constant";
-import { useToast } from "../use-toast";
 import Spinner from "../components/spinner";
+import { BASE_URL } from "../constants/api-constant";
+import { useToast } from "../hooks/use-toast";
 
 const CodeSos = () => {
   const navigate = useNavigate();

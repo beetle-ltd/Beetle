@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import ImageCard from "../components/image-card.tsx";
-import Driven from "../driven.tsx";
-import HeroSection from "../hero.tsx";
-import Products from "../products.tsx";
+import Driven from "./shared/driven.tsx";
+import HeroSection from "./shared/hero.tsx";
+import Products from "./shared/products.tsx";
 import GalaxyImg from "../assets/galaxy.png";
 import BallonImg from "../assets/ballon-bg.png";
 

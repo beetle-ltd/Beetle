@@ -69,3 +69,24 @@ body,
 .mix-blend-difference {
   mix-blend-mode: difference;
 }
+
+/* bloom styles */
+.smaller-element {
+  position: relative;
+}
+
+.smaller-element::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 200px;
+  background-color: #8c52ff; /* Change to your desired color */
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.smaller-element::before {
+  bottom: -10px;
+}

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { BASE_URL } from "../api-constant";
+import { BASE_URL } from "../constants/api-constant";
 import Spinner from "../components/spinner";
-import { useToast } from "../use-toast";
+import { useToast } from "../hooks/use-toast";
 
 const DeleteAll = () => {
   const [isDeleting, setIsDeleting] = useState(false);

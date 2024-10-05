@@ -1,4 +1,4 @@
-import { BodyLayout, Line, TextLayout } from "./components/shared";
+import { BodyLayout, Line, TextLayout } from "../components/shared";
 
 const TermsOfUse = () => {
   return (

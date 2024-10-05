@@ -1,4 +1,4 @@
-import { BodyLayout, Line, TextLayout } from "./components/shared.tsx";
+import { BodyLayout, Line, TextLayout } from "../components/shared.tsx";
 
 const PrivacyPolicy = () => {
   return (
@@ -42,8 +42,21 @@ const PrivacyPolicy = () => {
           notifications at any time.
         </TextLayout>
         <TextLayout num="4" title="Third-Party Service Providers">
-        Bloom may use personal user data for website maintenance, upgrades, new releases, or analytics data review or compilation. We may share user information with third-party service providers engaged to assist in these efforts. Bloom ensures that these service providers employ adequate security measures to protect user data.
-        <br />BLOOM WILL ALWAYS ATTEMPT TO SHARE YOUR DATA with <a href="https://myspotlight.me">Spotlight</a> which enables your customers and the world in general to view and interact with your brand and products. This is optional but mandatory. You will not be able to use any one of Bloom’s features except you explicitly allow Spotlight access to your data. Everything you do on Bloom automatically reflects on Spotlight. It’s that easy! We built Spotlight to complement Bloom in order to deliver to you an experience of a lifetime.
+          Bloom may use personal user data for website maintenance, upgrades,
+          new releases, or analytics data review or compilation. We may share
+          user information with third-party service providers engaged to assist
+          in these efforts. Bloom ensures that these service providers employ
+          adequate security measures to protect user data.
+          <br />
+          BLOOM WILL ALWAYS ATTEMPT TO SHARE YOUR DATA with{" "}
+          <a href="https://myspotlight.me">Spotlight</a> which enables your
+          customers and the world in general to view and interact with your
+          brand and products. This is optional but mandatory. You will not be
+          able to use any one of Bloom’s features except you explicitly allow
+          Spotlight access to your data. Everything you do on Bloom
+          automatically reflects on Spotlight. It’s that easy! We built
+          Spotlight to complement Bloom in order to deliver to you an experience
+          of a lifetime.
         </TextLayout>
         <TextLayout num="5" title="Data Sharing">
           We use personal information for internal purposes only and do not sell
@@ -73,9 +86,7 @@ const PrivacyPolicy = () => {
               If you have any questions or concerns about this Privacy Policy,
               please contact us at hello@beetleltd.
             </span>
-            <span>
-              This Privacy Policy is effective as of 1st June 2024.
-            </span>
+            <span>This Privacy Policy is effective as of 1st June 2024.</span>
           </div>
         </TextLayout>
       </div>
