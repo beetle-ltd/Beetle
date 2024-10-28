@@ -7,15 +7,12 @@ const menuItems = [
     id: 1,
     title: "Bloom",
     href: "/bloom",
-    isCenter: true,
   },
   {
     id: 2,
-    title: "Spotlight",
-    href: "https://myspotlight.me/",
-    isCenter: true,
+    title: "Blog",
+    href: "/blog",
   },
-  { id: 3, title: "Blog", href: "#", isRight: true },
 ];
 
 const NavigationMenu = () => {
@@ -46,50 +43,31 @@ const NavigationMenu = () => {
           </a>
         </motion.div>
 
-        <div className="hidden md:flex items-center justify-center flex-grow">
-          {menuItems
-            .filter((item) => item.isCenter)
-            .map((item) => (
-              <motion.div
-                key={item.id}
-                initial={{ y: -20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 0.6,
-                  delay: item.id * 0.1,
-                  ease: "easeOut",
-                }}
-                className="mx-4"
-              >
-                <a href={item.href}>
-                  <p className="text-sm text-text mix-blend-difference hover:text-primary transition-colors duration-300 group relative">
-                    {item.title}
-                    <motion.span
-                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
-                      layoutId="underline"
-                    />
-                  </p>
-                </a>
-              </motion.div>
-            ))}
+        <div className="hidden md:flex items-center justify-end flex-grow">
+          {menuItems.map((item) => (
+            <motion.div
+              key={item.id}
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: item.id * 0.1,
+                ease: "easeOut",
+              }}
+              className="mx-4"
+            >
+              <a href={item.href}>
+                <p className="text-sm font-semibold text-text mix-blend-difference hover:text-primary transition-colors duration-300 group relative">
+                  {item.title}
+                  <motion.span
+                    className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
+                    layoutId="underline"
+                  />
+                </p>
+              </a>
+            </motion.div>
+          ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="hidden md:block"
-        >
-          <a href="#">
-            <p className="text-sm  text-text mix-blend-difference hover:text-primary transition-colors duration-300 group relative">
-              Blog
-              <motion.span
-                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
-                layoutId="underline"
-              />
-            </p>
-          </a>
-        </motion.div>
 
         <button
           onClick={toggleMenu}

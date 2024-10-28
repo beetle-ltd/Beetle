@@ -11,16 +11,20 @@ const HeroSection = () => {
         className="mb-8 w-full max-w-3xl px-4 sm:px-0"
       >
         <div className="relative w-full aspect-w-16 aspect-h-9">
-          <img src={HeroImg} alt="Hero Image" style={{ objectFit: "cover" }} />
+          <img
+            src={HeroImg}
+            alt="Hero Image"
+            style={{ objectFit: "cover", scale: 2 }}
+          />
         </div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-        className="text-center px-4 sm:px-0 max-w-[608px]"
+        className="text-center px-4 sm:px-0 max-w-[800px]"
       >
-        <h1 className="md:leading-[115%] -tracking-[2%] text-3xl sm:text-5xl md:text-5xl font-bold text-gray-800 mb-4">
+        <h1 className="md:leading-[110%] -tracking-[2%] text-3xl sm:text-4xl md:text-6xl font-semibold text-gray-800 pb-10">
           Making commerce{" "}
           <span className="relative">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8C52FF] to-[#60E9FF]">
