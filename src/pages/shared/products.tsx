@@ -70,7 +70,7 @@ const SectionCard = ({
     >
       <div className="flex flex-col items-center space-y-10 text-center mb-8">
         <div className="flex items-center space-x-3">
-          <img src={logo} alt={`${title} logo`} className="w-10 md:w-full" />
+          <img src={logo} alt={`${title} logo`} className="w-10 md:w-16" />
           <h2
             className="text-2xl md:text-5xl font-bold text-blue-900"
             style={{
