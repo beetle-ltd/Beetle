@@ -63,7 +63,7 @@ const SectionCard = ({
 }: SectionCardProps) => {
   return (
     <section
-      className="relative px-6 py-12 md:py-20 overflow-y-hidden h-[85vh] md:h-[120vh]"
+      className="relative px-0 md:px-6 py-12 md:py-20 overflow-y-hidden h-[85vh] md:h-[120vh]"
       style={{
         background: bg,
       }}
@@ -108,7 +108,7 @@ const SectionCard = ({
         <img
           src={image.mobileSrc} // Mobile image path
           alt={image.alt}
-          className="block md:hidden"
+          className="block md:hidden scale-100"
         />
       </div>
     </section>
