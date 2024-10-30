@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 const VisionSection = () => {
   return (
     <section className="flex flex-col items-center min-h-screen px-4 space-y-2 md:space-y-5">
-      {/* Animated Vertical Line */}
-      <motion.div
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="w-0.5 h-32 bg-blue-400"
-      />
       {/* Animated Top Text */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -23,10 +16,9 @@ const VisionSection = () => {
           technology that works.
           <span className="relative">
             Our technology.”
-            <span className="absolute right-16 md:-right-1 -bottom-3 w-full h-2 mt-2">
+            <span className="absolute right-16 md:right-4 lg:right-1 -bottom-3 w-full h-3 mt-2">
               <svg
-                width="258"
-                height="22"
+                className="w-full h-auto" // This makes the SVG responsive
                 viewBox="0 0 258 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +26,8 @@ const VisionSection = () => {
                 <path
                   d="M2 19.9724C47 12.3058 160.9 -1.82758 256.5 2.97242"
                   stroke="url(#paint0_linear_983_3972)"
-                  stroke-width="3"
-                  stroke-linecap="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
                 />
                 <defs>
                   <linearGradient
@@ -46,8 +38,8 @@ const VisionSection = () => {
                     y2="11"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FF2A21" />
-                    <stop offset="1" stop-color="#FF7E21" />
+                    <stop stopColor="#FF2A21" />
+                    <stop offset="1" stopColor="#FF7E21" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -68,14 +60,6 @@ const VisionSection = () => {
           className="object-cover py-5 md:py-10 w-80 md:w-full"
         />
       </motion.div>
-
-      {/* Animated Vertical Line */}
-      <motion.div
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="w-0.5 h-24 bg-blue-400"
-      />
 
       {/* Animated Bottom Text */}
       <motion.div

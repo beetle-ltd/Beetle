@@ -90,7 +90,7 @@ const Footer = () => {
               visible: { opacity: 1 },
               hidden: { opacity: 0 },
             }}
-            className={"text-white text-sm text-center xl:text-justify"}
+            className={"text-white text-sm  xl:text-justify"}
           >
             Copyright © 2024 Beetle Ltd. All rights reserved.
           </motion.p>

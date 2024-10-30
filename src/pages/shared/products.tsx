@@ -63,12 +63,12 @@ const SectionCard = ({
 }: SectionCardProps) => {
   return (
     <section
-      className="relative px-0 md:px-6 py-12 md:py-20 overflow-y-hidden h-[85vh] md:h-[120vh]"
+      className="relative px-0 md:px-6 pt-12 md:py-20 overflow-y-hidden h-auto md:h-screen"
       style={{
         background: bg,
       }}
     >
-      <div className="flex flex-col items-center space-y-10 text-center mb-8">
+      <div className="flex flex-col items-center space-y-10 text-center">
         <div className="flex items-center space-x-3">
           <img src={logo} alt={`${title} logo`} className="w-10 md:w-16" />
           <h2
@@ -96,9 +96,9 @@ const SectionCard = ({
       <img
         src={extra}
         alt={`Extra-${title}`}
-        className="absolute top-1/2 md:top-[40%] z-10 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-1/2 md:top-[35%] z-10 left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
-      <div className="pt-16 md:pt-32">
+      <div className="pt-16 md:pt-0">
         <img
           src={image.src}
           alt={image.alt}
