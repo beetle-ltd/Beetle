@@ -32,7 +32,7 @@ const Footer = () => {
         hidden: {},
       }}
       className={
-        "bg-black backdrop-filter backdrop-blur-lg p-10 md:p-20 flex items-center justify-center"
+        "bg-black backdrop-filter backdrop-blur-lg p-10 md:p-20 flex items-center jus src={LogoWhite}"
       }
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 w-full h-full">
@@ -44,7 +44,11 @@ const Footer = () => {
           className={"flex flex-col space-y-10 justify-center"}
         >
           <a href="/">
-            <img alt={"Beetle Logo"} src={BeetleLogo} width={180} height={50} />
+            <img
+              alt={"Beetle Logo"}
+              src={BeetleLogo}
+              className="w-40 md:w-[180px]"
+            />
           </a>
           <div className="flex space-x-2 items-center">
             <a

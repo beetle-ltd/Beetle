@@ -6,6 +6,7 @@ import DeleteAll from "./pages/delete-all.tsx";
 import Home from "./pages/page.tsx";
 import PrivacyPolicy from "./pages/privacy-policy.tsx";
 import TermsOfUse from "./pages/terms-of-use.tsx";
+import Blog from "./pages/blog.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ function App() {
         { path: "/delete-all", element: <CodeSos /> },
         { path: "/account/delete", element: <DeleteAll /> },
       ],
+    },
+    {
+      path: "/blog",
+      element: <Blog />,
     },
   ]);
 

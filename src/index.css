@@ -91,3 +91,11 @@ body,
 .smaller-element::before {
   bottom: -10px;
 }
+
+/* blog */
+.blog__head {
+  background-image: url("./assets/blog/world-view.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
