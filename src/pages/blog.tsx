@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import LogoWhite from "../assets/beetle-logo-white.svg";
 import BlogSection from "../containers/blogs/blogs-container";
-import Footer from "./shared/footer";
+import Footer from "../components/shared/footer";
 
 const Blog = () => {
   return (
@@ -23,10 +23,13 @@ const Blog = () => {
               />
             </Link>
             <nav className="space-x-4 text-sm sm:text-sm">
-              <Link to="/bloom" className="hover:underline">
-                Bloom
+              <Link to="/" className="hover:underline">
+                Businesses
               </Link>
-              <Link to="/blog" className="underline">
+              <Link to="/" className="hover:underline">
+                Resellers
+              </Link>
+              <Link to="/blog" className="font-semibold hover:underline">
                 Blog
               </Link>
             </nav>

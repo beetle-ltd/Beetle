@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import NavigationMenu from "./pages/shared/navigation";
-import Footer from "./pages/shared/footer";
+import NavigationMenu from "./components/shared/navigation";
+import Footer from "./components/shared/footer";
 
 const Layout = () => {
   const { pathname } = useLocation();

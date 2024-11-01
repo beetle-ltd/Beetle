@@ -1,10 +1,4 @@
 import { useEffect } from "react";
-import Spotlight from "../components/bloom/spotlight";
-import Container from "../containers/bloom/container";
-import Hero from "../containers/bloom/hero";
-import IdeaPromotion from "../containers/bloom/idea-promotion";
-import Offers from "../containers/bloom/offers";
-import People from "../containers/bloom/people";
 const Bloom = () => {
   useEffect(() => {
     const redirectToApp = () => {
@@ -25,15 +19,7 @@ const Bloom = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      <Container>
-        <Hero />
-        <IdeaPromotion />
-        <Offers />
-      </Container>
-      <Spotlight />
-      <Container>
-        <People />
-      </Container>
+
       {/* <Footer /> */}
     </div>
   );

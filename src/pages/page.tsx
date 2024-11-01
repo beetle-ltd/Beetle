@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Driven from "./shared/driven.tsx";
-import HeroSection from "./shared/hero.tsx";
-import Products from "./shared/products.tsx";
-import VisionSection from "./shared/vison.tsx";
+import Driven from "./sections/driven.tsx";
+import HeroSection from "./sections/hero.tsx";
+import Products from "./sections/products.tsx";
+import VisionSection from "./sections/vision.tsx";
 import Ballons from "../assets/ballons.png";
 import BallonsMobile from "../assets/mobile/ballons_mobile.png";
 
