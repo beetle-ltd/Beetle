@@ -73,7 +73,7 @@ const Business = () => {
       />
 
       {/* header */}
-      <header className="pt-32 pb-10 sm:px-6 md:py-20">
+      <header className="pt-32 pb-10 sm:px-6 md:py-30">
         <div className="container mx-auto md:min-h-[600px] flex flex-col md:flex-row items-center justify-between p-0 md:p-8">
           <div className="md:max-w-[70%] space-y-6 text-center md:text-left">
             <div className="text-4xl sm:text-4xl md:text-6xl font-semibold text-purple-900 leading-tight">
