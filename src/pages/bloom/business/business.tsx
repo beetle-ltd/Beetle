@@ -166,7 +166,7 @@ const Business = () => {
       {/* showcase and sell */}
       <section className="py-10 md:py-20 md:min-h-screen space-y-10 px-4 sm:px-6">
         <div className="space-y-5 text-center max-w-2xl mx-auto">
-          <p className="text-sm text-[#8C52FF] font-medium">
+          <p className="text-sm text-[#197AD9] font-medium">
             SHOWCASE AND SELL
           </p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#372360]">
