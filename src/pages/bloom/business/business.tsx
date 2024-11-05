@@ -274,7 +274,7 @@ const Business = () => {
                 Get instant access to a wide range of existing products you can
                 resell and make money off.
               </p>
-              <Button className="bg-white text-[#083D71] mt-4 sm:mt-0">
+              <Button className="bg-white !text-[#083D71] mt-4 sm:mt-0">
                 Learn More
               </Button>
             </div>
