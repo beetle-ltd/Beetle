@@ -14,6 +14,7 @@ import FooterImg from "../../../assets/bloom/business/7.png";
 import LinkedinSvg from "../../../assets/bloom/linkedin.svg";
 import TwitterSvg from "../../../assets/bloom/twitter.svg";
 import InstagramSvg from "../../../assets/bloom/instagram.svg";
+import { Link } from "react-router-dom";
 
 const businessMenu = [
   {
@@ -64,31 +65,41 @@ const Chip = ({ children }: { children: React.ReactNode }) => {
 const Business = () => {
   return (
     <>
+      {/* navigation */}
       <Navigation
         colorScheme={businessColorScheme}
         menuItems={businessMenu}
         logoSrc={businessLogo}
       />
-      <header className="md:py-10">
-        <div className="container mx-auto md:min-h-[600px] md:flex items-center justify-between p-4 md:p-8">
-          <div className="space-y-6">
-            <div className="text-4xl md:text-6xl font-semibold text-purple-900 leading-tight">
-              <p className="flex items-end gap-x-3 leading-none">
+
+      {/* header */}
+      <header className="pt-32 pb-10 sm:px-6 md:py-20">
+        <div className="container mx-auto md:min-h-[600px] flex flex-col md:flex-row items-center justify-between p-0 md:p-8">
+          <div className="md:max-w-[70%] space-y-6 text-center md:text-left">
+            <div className="text-4xl sm:text-4xl md:text-6xl font-semibold text-purple-900 leading-tight">
+              <p className="flex items-center justify-center md:justify-start gap-x-3 leading-none">
                 Where{" "}
                 <span>
                   <img src={DownSvg} alt="Down arrow icon" className="-mb-3" />
                 </span>
               </p>
-              <span className="leading-tight">entrepreneurial dreams</span>
-              <span className="text-[#8C52FF]"> take flight.</span>
+              <span className="leading-tight block">entrepreneurial</span>
+
+              <span className="text-[#8C52FF] block">
+                <span className="text-purple-900">dreams </span>
+                take flight.
+              </span>
             </div>
-            <p className="text-md font-medium text-[#3D266D] md:text-lg max-w-lg">
+            <p className="w-[90%] text-md sm:text-md md:text-lg font-medium text-[#3D266D] max-w-lg mx-auto md:mx-0">
               Bloom makes it easy to sell more products and grow your business
               quickly.
             </p>
-            <Button>Join the Beta</Button>
+            <div className="flex justify-center md:justify-start">
+              <Button>Join the Beta</Button>
+            </div>
           </div>
-          <div className="w-full hidden md:flex justify-center">
+
+          <div className="hidden lg:flex justify-center">
             <img
               src={HeaderImg}
               alt="Header Illustration"
@@ -97,8 +108,10 @@ const Business = () => {
           </div>
         </div>
       </header>
+
+      {/* growth section */}
       <section
-        className="py-20 "
+        className="py-20 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(180deg, rgba(237, 232, 255, 0) 0%, #EDE8FF 100%)",
@@ -106,136 +119,186 @@ const Business = () => {
       >
         <div className="flex flex-col items-center gap-y-10">
           <div className="mx-auto max-w-3xl text-center space-y-5">
-            <h1 className="text-[#372360] text-xl md:text-4xl font-semibold">
+            <h1 className="text-[#372360] text-2xl sm:text-3xl md:text-4xl font-semibold">
               Bloom is more than just an app — it's your partner in business
-              growth.{" "}
+              growth.
             </h1>
-            <p className="text-[#4A2D85] max-w-lg mx-auto">
+            <p className="text-[#4A2D85] text-base sm:text-lg max-w-lg mx-auto">
               Bloom helps you get your products off the shelves quickly and into
               the hands of more customers.
             </p>
           </div>
-          <div className="pt-10">
-            <img src={GrowthImg} alt="" />
+          <div className="pt-10  mx-auto">
+            <img
+              src={GrowthImg}
+              alt="Growth illustration"
+              className="block mx-auto max-w-full w-full"
+            />
           </div>
         </div>
       </section>
-      <section className="text-center py-10 md:py-20 md:min-h-screen">
+
+      {/* expand your search */}
+      <section className="text-center py-10 md:py-20 md:min-h-screen px-4 sm:px-6">
         <div className="space-y-5 max-w-2xl mx-auto">
           <p className="text-sm text-[#8C52FF] font-medium">
             EXPAND YOUR SEARCH
           </p>
-          <h1 className="text-xl md:text-4xl font-semibold text-[#372360]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#372360]">
             Get your products into the hands of so much more people!
           </h1>
-          <p className="text-[#3D266D]">
+          <p className="text-[#3D266D] text-base sm:text-lg">
             Bloom connects you to a wide range of <Chip>resellers</Chip> who can
             take your products to places you can’t go. They’ll help you reach
             more customers and sell more in less time.
           </p>
         </div>
-        <img src={SectionImg3} className="block mx-auto" alt="" />
+
+        <div className="mx-auto mt-10">
+          <img
+            src={SectionImg3}
+            className="block mx-auto max-w-full h-auto"
+            alt="Expand Your Reach"
+          />
+        </div>
       </section>
-      <section className="py-10 md:py-20 md:min-h-screen space-y-10">
+
+      {/* showcase and sell */}
+      <section className="py-10 md:py-20 md:min-h-screen space-y-10 px-4 sm:px-6">
         <div className="space-y-5 text-center max-w-2xl mx-auto">
           <p className="text-sm text-[#8C52FF] font-medium">
             SHOWCASE AND SELL
           </p>
-          <h1 className="text-xl md:text-4xl font-semibold text-[#372360]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#372360]">
             Your Products deserve a stage
           </h1>
-          <p className="text-lg text-[#3D266D]">
+          <p className="text-base sm:text-lg text-[#3D266D]">
             Let’s give them one that is simple and sleek. One that sells.
           </p>
-          <p className="text-[#3D266D]">
+          <p className="text-[#3D266D] text-sm sm:text-base">
             Bloom provides your business with a simple webpage where customers
             can browse, buy, and come back for more. It’s your online
             storefront, available 24/7, so you never miss a sale.
           </p>
         </div>
-        <img src={SectionImg4} alt="" className="block mx-auto" />
+
+        <div className=" mx-auto">
+          <img
+            src={SectionImg4}
+            alt="Product Showcase"
+            className="block mx-auto max-w-full h-auto"
+          />
+        </div>
       </section>
+
       {/* insightful - management */}
-      <section className="py-10 md:py-20 md:min-h-screen space-y-10">
+      <section className="py-10 md:py-20 md:min-h-screen space-y-10 px-4 sm:px-6">
         <div className="space-y-5 text-center max-w-2xl mx-auto">
           <p className="text-sm text-[#8C52FF] font-medium">
             INSIGHTFUL MANAGEMENT
           </p>
-          <h1 className="text-xl md:text-4xl font-semibold text-[#372360]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#372360]">
             Your business management made simple
           </h1>
-          <p className="text-[#3D266D]">
+          <p className="text-[#3D266D] text-base sm:text-lg">
             Enjoy detailed weekly insights into your inventory and sales. You’ll
             know what’s selling, what’s not, and where to adjust.
           </p>
         </div>
-        <img src={Section5Img} alt="" className="block mx-auto" />
+
+        <div className="mx-auto">
+          <img
+            src={Section5Img}
+            alt="Management Insights"
+            className="block mx-auto max-w-full h-auto"
+          />
+        </div>
       </section>
+
       {/* why bloom */}
-      <section className="bg-[#EDE8FF] py-20 relative">
+      <section className="bg-[#EDE8FF] py-20 px-4 sm:px-6 relative">
         <div className="text-center space-y-5 max-w-3xl mx-auto">
-          <h1 className="text-5xl text-[#8C52FF] font-semibold">
+          <h1 className="text-4xl sm:text-5xl text-[#8C52FF] font-semibold">
             Why Bloom? Because it works!
           </h1>
-          <h2 className="text-3xl text-[#3D266D] font-medium">
+          <h2 className="text-2xl sm:text-3xl text-[#3D266D] font-medium">
             Bloom is simple, easy to use, and powerful.
           </h2>
-          <p className="text-[#3D266D] font-medium">
+          <p className="text-[#3D266D] font-medium text-lg sm:text-base">
             We are delivering to you a superior experience that works. From
             ensuring the sale of your products to getting it into the hands of
-            your customers. Bloom has got you covered!
+            your customers, Bloom has got you covered!
           </p>
-          <Button>Join the Beta</Button>
-        </div>
-        <div className="overflow-y-hidden h-[700px]">
-          <img src={Section6Img} alt="" className="block mx-auto" />
+          <Button className="mt-4">Join the Beta</Button>
         </div>
 
-        <div className="mx-auto text-center max-w-1/2 pt-20 space-y-5">
-          <h1 className="text-3xl font-semibold text-[#372360]">
+        <div className="overflow-hidden h-[200px] sm:h-[700px] mt-10">
+          <img
+            src={Section6Img}
+            alt="Bloom Showcase"
+            className="block mx-auto max-w-full h-auto"
+          />
+        </div>
+
+        <div className="mx-auto text-center max-w-lg pt-20 space-y-5">
+          <h1 className="text-2xl sm:text-3xl font-semibold text-[#372360]">
             Start growing your business with Bloom today.
           </h1>
-          <p className="text-[#3D266D] font-semibold text-xl">
+          <p className="text-[#3D266D] font-semibold text-lg sm:text-xl">
             Download the app here
           </p>
 
-          <div className="inline-flex gap-x-5">
-            <img src={AppleStore} alt="" />
-            <img src={GooglePlay} alt="" />
+          <div className="inline-flex gap-x-5 justify-center mt-4">
+            <img src={AppleStore} alt="Apple Store" className="h-12 w-auto" />
+            <img
+              src={GooglePlay}
+              alt="Google Play Store"
+              className="h-12 w-auto"
+            />
           </div>
         </div>
       </section>
+
+      {/* footer */}
       <section className="bg-[#197AD9]">
-        <div className="container mx-auto py-10">
-          <div className="flex items-center justify-between">
-            <div className="text-white space-y-5">
-              <h1 className="text-4xl font-semibold">
+        <div className="container mx-auto py-10 px-4 sm:px-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
+            <div className="text-white space-y-5 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl font-semibold">
                 Want to make extra money?
               </h1>
-              <p className="text-xl">
+              <p className="text-lg sm:text-xl">
                 Start your business now with Bloom: For Resellers
               </p>
               <p>
                 Get instant access to a wide range of existing products you can
                 resell and make money off.
               </p>
-              <Button className="bg-white text-[#083D71]">Learn More</Button>
+              <Button className="bg-white text-[#083D71] mt-4 sm:mt-0">
+                Learn More
+              </Button>
             </div>
-            <img src={FooterImg} alt="" />
+            <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+              <img src={FooterImg} alt="" className="max-w-xs lg:max-w-none" />
+            </div>
           </div>
         </div>
-        <footer className="border-t-2 py-2">
-          <div className="container mx-auto flex justify-between items-center">
-            <div>
-              <img src={bloomLogoWhite} alt="" />
+        <footer className="border-t-2 py-4 px-4 sm:px-6">
+          <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
+            <div className="flex justify-center lg:justify-start">
+              <img src={bloomLogoWhite} alt="" className="h-8 w-auto" />
             </div>
-            <div className="flex-1 text-sm text-white text-center">
-              Copyright © 2024 Beetle Ltd. All rights reserved.
+            <div className="text-center lg:text-center text-sm text-white">
+              Copyright © 2024
+              <Link to="/" className="hover:underline">
+                &nbsp;Beetle Ltd.&nbsp;
+              </Link>
+              All rights reserved.
             </div>
-            <div className="inline-flex gap-x-2">
-              <img src={LinkedinSvg} alt="" />
-              <img src={TwitterSvg} alt="" />
-              <img src={InstagramSvg} alt="" />
+            <div className="flex justify-center lg:justify-end gap-x-4">
+              <img src={LinkedinSvg} alt="LinkedIn" className="h-6 w-6" />
+              <img src={TwitterSvg} alt="Twitter" className="h-6 w-6" />
+              <img src={InstagramSvg} alt="Instagram" className="h-6 w-6" />
             </div>
           </div>
         </footer>
