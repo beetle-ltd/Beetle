@@ -6,6 +6,9 @@ import DeleteAll from "./pages/delete-all.tsx";
 import Home from "./pages/page.tsx";
 import PrivacyPolicy from "./pages/privacy-policy.tsx";
 import TermsOfUse from "./pages/terms-of-use.tsx";
+import Bloom from "./pages/bloom/bloom.tsx";
+import Reseller from "./pages/bloom/reseller/reseller.tsx";
+import Business from "./pages/bloom/business/business.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,12 +17,20 @@ function App() {
       element: <Layout />,
       children: [
         { path: "/", element: <Home /> },
-        // { path: "/bloom", element: <Bloom /> },
+        // { path: "/bloom", element: <Bloom /> },`
         { path: "/privacy-policy", element: <PrivacyPolicy /> },
         { path: "terms-of-use", element: <TermsOfUse /> },
         { path: "/delete-all", element: <CodeSos /> },
         { path: "/account/delete", element: <DeleteAll /> },
       ],
+    },
+    {
+      path: "/bloom/resellers",
+      element: <Reseller />,
+    },
+    {
+      path: "/bloom/businesses",
+      element: <Business />,
     },
     {
       path: "/blog",

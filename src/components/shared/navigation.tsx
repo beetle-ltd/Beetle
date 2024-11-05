@@ -7,12 +7,12 @@ const menuItems = [
   {
     id: 1,
     title: "Businesses",
-    href: "/",
+    href: "/bloom/businesses",
   },
   {
     id: 2,
     title: "Resellers",
-    href: "/",
+    href: "/bloom/resellers",
   },
   {
     id: 3,

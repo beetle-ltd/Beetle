@@ -16,7 +16,7 @@ const Driven = () => {
 
   return (
     <section
-      className="py-10 md:py-20 mx-auto  px-4 sm:px-8 md:px-16 lg:px-24"
+      className="py-10 md:py-20 mx-auto  px-4 sm:px-8 md:px-16 lg:px-24 overflow-x-hidden"
       ref={ref}
     >
       <div>
