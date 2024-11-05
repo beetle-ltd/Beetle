@@ -1,14 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout.tsx";
 import Blog from "./pages/blog.tsx";
+import Business from "./pages/bloom/business/business.tsx";
+import Reseller from "./pages/bloom/reseller/reseller.tsx";
 import CodeSos from "./pages/code-sos.tsx";
 import DeleteAll from "./pages/delete-all.tsx";
 import Home from "./pages/page.tsx";
 import PrivacyPolicy from "./pages/privacy-policy.tsx";
 import TermsOfUse from "./pages/terms-of-use.tsx";
-import Bloom from "./pages/bloom/bloom.tsx";
-import Reseller from "./pages/bloom/reseller/reseller.tsx";
-import Business from "./pages/bloom/business/business.tsx";
 
 function App() {
   const router = createBrowserRouter([
