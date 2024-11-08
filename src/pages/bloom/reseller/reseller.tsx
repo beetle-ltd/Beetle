@@ -125,9 +125,9 @@ const Reseller = () => {
           <div className="mx-auto max-w-3xl text-center space-y-5">
             <h1 className="text-[#0D4173] text-2xl sm:text-3xl md:text-4xl font-semibold">
               Start Your Business with
-              <span className="relative px-6">
+              <span className="relative px-5 sm:px-6">
                 Zero
-                <span className="absolute left-1 -bottom-2">
+                <span className="absolute -left-2 sm:left-1 -bottom-4 sm:-bottom-2 transform scale-75 sm:scale-100">
                   <svg
                     width="117"
                     height="67"
