@@ -15,6 +15,7 @@ import bloomLogoWhite from "../../../assets/bloom/Purple horizontally stacked 2 
 import LinkedinSvg from "../../../assets/bloom/linkedin.svg";
 import TwitterSvg from "../../../assets/bloom/twitter.svg";
 import InstagramSvg from "../../../assets/bloom/instagram.svg";
+import { SocialLinks } from "../../../constants/socialLinks";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -318,7 +319,7 @@ const Reseller = () => {
         <footer className="border-t-2 py-4 px-4 sm:px-6">
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
             <div className="flex justify-center lg:justify-start">
-              <img src={bloomLogoWhite} alt="" className="h-8 w-auto" />
+              <img src={bloomLogoWhite} alt="" className="h-12 w-auto" />
             </div>
             <div className="text-center lg:text-center text-sm text-white">
               Copyright © 2024
@@ -327,16 +328,17 @@ const Reseller = () => {
               </Link>
               All rights reserved.
             </div>
+
             <div className="flex justify-center lg:justify-end gap-x-4">
-              <a
-                href="https://www.linkedin.com/company/beetle-ltd/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={SocialLinks.LinkedInBeetle}>
                 <img src={LinkedinSvg} alt="LinkedIn" className="h-6 w-6" />
               </a>
-              <img src={TwitterSvg} alt="Twitter" className="h-6 w-6" />
-              <img src={InstagramSvg} alt="Instagram" className="h-6 w-6" />
+              <a href={SocialLinks.TwitterBeetle}>
+                <img src={TwitterSvg} alt="Twitter" className="h-6 w-6" />
+              </a>
+              <a href={SocialLinks.InstagramBeetle}>
+                <img src={InstagramSvg} alt="Instagram" className="h-6 w-6" />
+              </a>
             </div>
           </div>
         </footer>
