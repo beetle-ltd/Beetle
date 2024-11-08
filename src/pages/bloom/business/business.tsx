@@ -14,7 +14,7 @@ import FooterImg from "../../../assets/bloom/business/7.png";
 import LinkedinSvg from "../../../assets/bloom/linkedin.svg";
 import TwitterSvg from "../../../assets/bloom/twitter.svg";
 import InstagramSvg from "../../../assets/bloom/instagram.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const businessMenu = [
   {
@@ -44,10 +44,11 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-const Button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       className={`bg-[#8C52FF] text-white text-base py-3 px-9 rounded-xl font-semibold hover:scale-105  transition ease-in-out ${className}`}
+      {...props}
     >
       {children}
     </button>
@@ -63,6 +64,8 @@ const Chip = ({ children }: { children: React.ReactNode }) => {
 };
 
 const Business = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* navigation */}
@@ -268,13 +271,19 @@ const Business = () => {
                 Want to make extra money?
               </h1>
               <p className="text-lg sm:text-xl">
-                Start your business now with Bloom: For Resellers
+                Start your business now with
+                <Link className="font-semibold px-2" to={"/bloom/resellers"}>
+                  Bloom: For Resellers
+                </Link>
               </p>
               <p>
                 Get instant access to a wide range of existing products you can
                 resell and make money off.
               </p>
-              <Button className="bg-white !text-[#083D71] mt-4 sm:mt-0">
+              <Button
+                className="bg-white !text-[#083D71] mt-4 sm:mt-0"
+                onClick={() => navigate("/bloom/resellers")}
+              >
                 Learn More
               </Button>
             </div>
